@@ -1,0 +1,64 @@
+.menu {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-image: linear-gradient(180deg, var(--leadcolor) 60%, var(--leadcolor2));
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+    .menu .logo {
+        justify-self: flex-start;
+        margin-left: 1%;
+        filter: invert(99%) sepia(94%) saturate(2%) hue-rotate(157deg) brightness(118%) contrast(100%);
+        height: 40px;
+    }
+
+
+
+    .menu .icon {
+        justify-self: flex-end;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        width: 24px;
+        height: 24px;
+        margin-left: 7px;
+        padding-top: 0;
+    }
+
+        a img.icon:hover {
+            /**filter: invert(0%) sepia(94%) saturate(0%) hue-rotate(239deg) brightness(109%) contrast(105%); dark*/
+            /**filter: invert(21%) sepia(7%) saturate(1646%) hue-rotate(314deg) brightness(96%) contrast(88%); slightly darker*/ 
+            opacity: 0.60;
+        }
+
+
+
+    .menu a.page {
+        justify-self: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        padding-left: 36px;
+        padding-right: 36px;
+        font-weight: bolder;
+        font-size: 80%;
+        text-decoration: none;
+    }
+
+        .menu a.page:hover {
+            background-color: rgba(88, 26, 20, 0.4);
+        }
+
+        .menu a.page:active {
+            background-color: #0000007a;
+            color: var(--leadcolor);
+        }
+

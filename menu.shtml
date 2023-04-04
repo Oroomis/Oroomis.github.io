@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/menu.css">
+    </head>
+
+    <body><nav class="menu">
+        <img src="/bin/icons/remox_icon.png" class="logo">
+
+        <a href="./" class="page">Home</a>
+        <a href="news/" class="page">News</a>
+        <a href="about/" class="page">About</a>
+        <a href="download/" class="page">Download</a>
+
+        <a href="https://www.facebook.com" target=”_blank”><img src="/bin/icons/facebook_icon.png" class="icon"></a>
+        <a href="https://twitter.com" target=”_blank”><img src="/bin/icons/twitter_icon.png" class="icon"></a>
+        <a href="https://twitter.com/Grubhub" target=”_blank”><img src="/bin/icons/the_most_important_icon.png" class="icon"></a>
+        <a href="https://github.com/Oroomis" target=”_blank”><img src="/bin/icons/github_icon.png" class="icon"></a>
+        <a href="https://discord.com" target=”_blank”><img src="/bin/icons/discord_icon.png" class="icon"></a>
+    </nav></body>
+
+</html>
