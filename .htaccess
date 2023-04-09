@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^$ /home [R=301,L]
+
+ErrorDocument 404 /remox.com/bin/page404.html
+ErrorDocument 403 /remox.com/bin/page404.html
