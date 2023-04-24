@@ -9,7 +9,15 @@
 </head>
 
 <body>
-    <py-script> await micropip.install("micropip") </py-script>
+    <py-script> 
+import asyncio
+
+async def main():
+    for i in range(3):
+        print(i)
+        await asyncio.sleep(1)
+
+asyncio.ensure_future(main()) </py-script>
     <div data-include="/oroomis.github.io/menu.shtml"></div>
     <div class="mainSection">
         <h1 style="margin:0;">HOME</h1>
