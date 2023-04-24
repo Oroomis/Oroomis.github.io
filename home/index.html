@@ -4,17 +4,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-     <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
 
 </head>
 
 <body>
+    <py-script> await micropip.install("micropip") </py-script>
     <div data-include="/oroomis.github.io/menu.shtml"></div>
     <div class="mainSection">
         <h1 style="margin:0;">HOME</h1>
         <button onclick="window.print()">Print this page</button>
     </div>
-    <py-script> await micropip.install("micropip") </py-script>
+    
 </body>
 
 </html>
