@@ -4,7 +4,7 @@
     --bgcolor: rgba(255, 255, 255);
 }
 
-html.main, body.main {
+html, body {
     background-color: var(--bgcolor);
     font-family: "Lucida Sans Unicode";
     margin:0; 
