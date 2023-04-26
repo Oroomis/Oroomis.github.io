@@ -22,6 +22,7 @@ import micropip
 import asyncio
 async def main():
     await micropip.install("matplotlib")
+    import matplotlib
     import matplotlib.pyplot as plt
     await micropip.install("numpy")
     import numpy as np
