@@ -17,19 +17,19 @@
     
     <div id="matplotlib-lineplot"></div>
     <py-script output="matplotlib-lineplot">
-        import asyncio
-        async def main():
-            await micropip.install("matplotlib")
-            import matplotlib.pyplot as plt
-            fig, ax = plt.subplots()
-            x = ["Python", "C++", "JavaScript", "Golang"]
-            y = [10, 5, 9, 7]
-            plt.plot(x, y, marker='o', linestyle='-', color='b')
-            plt.xlabel('Language')
-            plt.ylabel('Score')
-            plt.title('Language vs Score')
-            fig
-        asyncio.ensure_future(main()) 
+import asyncio
+async def main():
+    await micropip.install("matplotlib")
+    import matplotlib.pyplot as plt
+    fig, ax = plt.subplots()
+    x = ["Python", "C++", "JavaScript", "Golang"]
+    y = [10, 5, 9, 7]
+    plt.plot(x, y, marker='o', linestyle='-', color='b')
+    plt.xlabel('Language')
+    plt.ylabel('Score')
+    plt.title('Language vs Score')
+    fig
+asyncio.ensure_future(main()) 
          </py-script>
     
     <div data-include="/oroomis.github.io/menu.shtml"></div>
