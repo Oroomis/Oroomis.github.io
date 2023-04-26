@@ -17,9 +17,8 @@
     
     <div id="matplotlib-lineplot"></div>
     <py-script output="matplotlib-lineplot">
-            # Python Code
-           
-            # importing the matplotlib library
+
+            await micropip.install("matplotlib")
             import matplotlib.pyplot as plt
             fig, ax = plt.subplots()
             # x axis
