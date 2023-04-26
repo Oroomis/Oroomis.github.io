@@ -15,26 +15,26 @@
     </py-env>
 
     
-    <py-script> 
-import asyncio
-import matplotlib
-
-async def main():
-    
-    import matplotlib.pyplot as plt
-    import numpy as np
-
-    xpoints = np.array([0, 6])
-    ypoints = np.array([0, 250])
-
-    plt.plot(xpoints, ypoints)
-    plt.show()
-        
-    await micropip.install("matplotlib")
-    await asyncio.sleep(1)
-
-asyncio.ensure_future(main()) 
-    </py-script>
+    <div id="matplotlib-lineplot"></div>
+    <py-script output="matplotlib-lineplot">
+            # Python Code
+           
+            # importing the matplotlib library
+            import matplotlib.pyplot as plt
+            fig, ax = plt.subplots()
+            # x axis
+            x = ["Python", "C++", "JavaScript", "Golang"]
+            # y axis
+            y = [10, 5, 9, 7]
+            plt.plot(x, y, marker='o', linestyle='-', color='b')
+            # Naming the x-label
+            plt.xlabel('Language')
+            # Naming the y-label
+            plt.ylabel('Score')
+            # Naming the title of the plot
+            plt.title('Language vs Score')
+            fig
+         </py-script>
     
     <div data-include="/oroomis.github.io/menu.shtml"></div>
     <div class="mainSection">
