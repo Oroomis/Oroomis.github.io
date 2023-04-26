@@ -25,19 +25,14 @@
             await micropip.install("matplotlib")
             import matplotlib.pyplot as plt
         
-            fig, ax = plt.subplots()
-            # x axis
-            x = ["Python", "C++", "JavaScript", "Golang"]
-            # y axis
-            y = [10, 5, 9, 7]
-            plt.plot(x, y, marker='o', linestyle='-', color='b')
-            # Naming the x-label
-            plt.xlabel('Language')
-            # Naming the y-label
-            plt.ylabel('Score')
-            # Naming the title of the plot
-            plt.title('Language vs Score')
-            fig
+            fig, ax = plt.subplots()
+            x = ["Python", "C++", "JavaScript", "Golang"]
+            y = [10, 5, 9, 7]
+            plt.plot(x, y, marker='o', linestyle='-', color='b')
+            plt.xlabel('Language')
+            plt.ylabel('Score')
+            plt.title('Language vs Score')
+            fig
          </py-script>
     
     <div data-include="/oroomis.github.io/menu.shtml"></div>
