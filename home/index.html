@@ -9,15 +9,29 @@
 </head>
 
 <body>
+    
+    <py-env>
+        - matplotlib
+    </py-env>
+
+    
     <py-script> 
 import asyncio
 
 async def main():
-    for i in range(3):
-        print(i)
-        await asyncio.sleep(1)
+    import matplotlib.pyplot as plt
+    import numpy as np
 
-asyncio.ensure_future(main()) </py-script>
+    xpoints = np.array([0, 6])
+    ypoints = np.array([0, 250])
+
+    plt.plot(xpoints, ypoints)
+    plt.show()
+    await asyncio.sleep(1)
+
+asyncio.ensure_future(main()) 
+    </py-script>
+    
     <div data-include="/oroomis.github.io/menu.shtml"></div>
     <div class="mainSection">
         <h1 style="margin:0;">HOME</h1>
