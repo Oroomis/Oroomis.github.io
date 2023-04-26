@@ -18,8 +18,13 @@
     <div id="matplotlib-lineplot"></div>
     <py-script output="matplotlib-lineplot">
 
+        
+        
+        
+        async def main():
             await micropip.install("matplotlib")
-            import matplotlib.pyplot as plt
+            import matplotlib.pyplot as plt
+        
             fig, ax = plt.subplots()
             # x axis
             x = ["Python", "C++", "JavaScript", "Golang"]
