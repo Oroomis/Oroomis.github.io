@@ -20,7 +20,7 @@ import asyncio
 import matplotlib
 
 async def main():
-    await micropip.install("matplotlib")
+    
     import matplotlib.pyplot as plt
     import numpy as np
 
@@ -29,6 +29,8 @@ async def main():
 
     plt.plot(xpoints, ypoints)
     plt.show()
+        
+    await micropip.install("matplotlib")
     await asyncio.sleep(1)
 
 asyncio.ensure_future(main()) 
