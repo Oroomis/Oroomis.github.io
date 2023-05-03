@@ -11,7 +11,7 @@ def f1(x, l):
 
 fig, ax = plt.subplots()
 
-controls = iplt.plot(x, f1, l=l, label="f1")
+controls = iplt.plot(x, f1, l=l, beta=(1, 10, 100), label="f1")
 iplt.plot(x, f1, controls=controls, label="f1")
 _ = plt.legend()
 plt.show()
