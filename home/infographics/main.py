@@ -1,18 +1,19 @@
-import mpl_interactions.ipyplot as iplt
-import matplotlib.pyplot as plt
+import pygal as pg
 import numpy as np
+import timeit
 
+def factorial(n):
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+fact_list = [factorial(i) for i in range(11)]
+    
+bar_chart = pg.Bar()
+bar_chart = pg.Bar(height=400)
+bar_chart.add('Factorial', fact_list)
 
-x = np.linspace(0, np.pi, 100)
-l = 3
-
-def f1(x, l):
-    return x*l
-
-fig, ax = plt.subplots()
-
-controls = iplt.plot(x, f1, l=l, beta=(1, 10, 100), label="f1")
-iplt.plot(x, f1, controls=controls, label="f1")
-_ = plt.legend()
-plt.show()
-
+print("Saving the chart...")
+start = timeit.default_timer()
+bar_chart.render_to_file('bar_chart.svg') 
+print("Done in", round(timeit.default_timer() - start, 2), "seconds")
