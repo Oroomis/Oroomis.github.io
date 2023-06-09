@@ -7,10 +7,10 @@
     <body><nav class="menu">
         <img src="/bin/icons/remox_icon.png" class="menu logo">
 
-        <a href="./" class="menu page">Home</a>
-        <a href="news/" class="menu page">News</a>
-        <a href="about/" class="menu page">About</a>
-        <a href="download/" class="menu page">Download</a>
+        <a href="/home/" class="menu page">Home</a>
+        <a href="/news/" class="menu page">News</a>
+        <a href="/about/" class="menu page">About</a>
+        <a href="/download/" class="menu page">Download</a>
 
         <a href="https://www.facebook.com" target=”_blank”><img src="/bin/icons/facebook_icon.png" class="menu icon"></a>
         <a href="https://twitter.com" target=”_blank”><img src="/bin/icons/twitter_icon.png" class="menu icon"></a>
