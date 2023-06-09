@@ -1,11 +1,11 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="/menu.css">
     </head>
 
     <body><nav class="menu">
-        <img src="bin/icons/remox_icon.png" class="menu logo">
+        <img src="/bin/icons/remox_icon.png" class="menu logo">
 
         <a href="/home/" class="menu page">Home</a>
         <a href="/news/" class="menu page">News</a>
